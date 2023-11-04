@@ -1,0 +1,22 @@
+footer{
+    background-color: rgb(102, 26, 26);
+}
+
+footer a{
+    margin: 1%;
+    padding: 1%;
+    color: rgb(250, 250, 250);
+}
+
+footer .container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(to bottom right, rgba(3, 75, 97, 0.767), rgba(27, 116, 168, 0.829));
+}
+
+a {
+
+    text-decoration: none;
+    
+    }
