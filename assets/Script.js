@@ -1,18 +1,41 @@
-function valor() {
-    let n1 = document.getElementById('cantidadTickets').ariaValueMax;
-    let n2 = document.getElementById('brownsers').ariaValueMax;
+function BorrarDatos() {
+
+    document.getElementById("campoNombre").value = "";
+    document.getElementById("campoApellido").value = "";
+    document.getElementById("campoCorreo").value = "";
+    document.getElementById("cantidadTickets").value = "";
+    document.getElementById("browser").value = "";
+    document.getElementById("total").innerText = "";
+}
+
+
+
+
+ function valor() {
+    let n1 = document.getElementById("cantidadTickets").value;
+    let n2 = document.getElementById("browser").value;
     
-    console.log((parseInt(n1) * 200) / 2)
+    if (n2 == "Estudiante"){
+        let valorSinDes = 200 * n1; 
+        let valorConDes = valorSinDes - (valorSinDes * 0.8);
+        
+        document.getElementById("total").innerText = valorConDes;
+    }
+    
+    if (n2 == "Trainee"){
+        let valorSinDes = 200 * n1; 
+        let valorConDes = valorSinDes - (valorSinDes * 0.5);
 
-    let resultado = ((parseInt(n1) * 200) / 2)
+        document.getElementById("total").innerText = valorConDes;
 
-    document.getElementById('total').innerText = resultado
+    }
 
-}
-function limpiar(){
-    document.getElementById('total').innerHTML = '';
-    document.getElementById('cantidad').reset(); 
-}
+    if (n2 == "Junior"){
+        let valorSinDes = 200 * n1; 
+        let valorConDes = valorSinDes - (valorSinDes * 0.15);
 
-var y = document.getElementById('botonborrar');
-y.addEventListener('click', limpiar);
+        document.getElementById("total").innerText = valorConDes;
+    }
+
+    
+ }

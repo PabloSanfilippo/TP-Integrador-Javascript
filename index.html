@@ -73,13 +73,13 @@
       <form>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Nombre" name="Nombre">
+            <input id="campoNombre"type="text" class="form-control" placeholder="Nombre" name="Nombre">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Apellido" name="Apellido">
+            <input id="campoApellido" type="text" class="form-control" placeholder="Apellido" name="Apellido">
           </div>
         </div>
-        <input type="text" class="form-control my-3" placeholder="Correo">
+        <input id="campoCorreo" type="text" class="form-control my-3" placeholder="Correo">
         <div class="row">
           <div class="col">
             <p class="text">Cantidad</p>
@@ -102,12 +102,12 @@
         <div class="row">
           <div class="col">
             <div class="d-grid my-2">
-              <button id="botonborrar" type="button" style="background-color: rgb(124, 202, 79); color: beige;"  class="btn btn-block">Borrar</button>
+              <button id="botonborrar" type="button" onclick="BorrarDatos()" style="background-color: rgb(124, 202, 79); color: beige;"  class="btn btn-block">Borrar</button>
             </div>
           </div>
           <div class="col">
             <div class="d-grid my-2">
-              <button id="botonresumen" type="button" style="background-color: rgb(124, 202, 79); color: beige;" class="btn btn-block">Resumen</button>
+              <button id="botonresumen" type="button" onclick="valor()"style="background-color: rgb(124, 202, 79); color: beige;" class="btn btn-block">Resumen</button>
             </div>
           </div>
         </div>
